@@ -1,6 +1,6 @@
 function [ output_args ] = Oosterhuis_assignment3_exercise2()
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+%Function takes points from user input and makes parametrisation for line between points. Function output is figure of xy-plane with points connected by parametrisation and a special mark for the center of mass.
+% Function gives xy-plane to user with instructions 
 
 %generate graphical user input, number of points: min=1, max=infinity
 [x,y] = ginput

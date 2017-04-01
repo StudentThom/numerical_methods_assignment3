@@ -52,7 +52,7 @@ The reliability and precision of the computed lambdas, values voor $C$ and the r
 \end{figure}
 
 %illustration of output and how figure was produced. describe picture
-Figures \ref{ex1_graphs} shows the solution of the least square approximation along with the data points for four different data sets. This output was produced by first plotting the data and then plotting the independent variables against the solution of $A * C$, where the matrix A and the vector C both depent on the new values for the lambdas.
+Figures 1 to 4 show the solution of the least square approximation along with the data points for four different data sets. This output was produced by first plotting the data and then plotting the independent variables against the solution of $A * C$, where the matrix A and the vector C both depent on the new values for the lambdas.
 %PLAATJES
 \begin{figure}[H]
 \parbox[t]{0.4\textwidth}{
@@ -97,7 +97,7 @@ To determine the length of C, the cumulative sum of the square root of the eleme
 %short discussion of the reliability and precision of the answer. restrictions program. When does program not work?
 
 %illustration of output and how figure was produced. describe picture
-
+An example of the output of the function is showsn above in \ref{ex2_1}. The picture was produced by taking the points on the xy-plane as defined by the user. The points are stored in two vectors, one with the x-component and one with the y-component of every number. To make a closed curve, both vectors get an extra point at the end of the vector, being the same element as the first one.
 %answers to questions asked in the assignment
 
 \section*{Exercise \rom{3}}
@@ -107,7 +107,7 @@ The functions Oosterhuis\_exercise3\_assignment3\_2 calculates the discrete Four
 
 %concise description of the method
 The function uses recursion. When the vector is called with a vector of length one, the function output will be just this vector. When the function is called with a vector of length $2^n$, the function will make two vectors: a vector of the even elements and a vector of the odd elements of the original vector. From both these vectors the Fourier transform is calculated using the function Oosterhuis\_exercise3\_assignment3\_2 again with as arguments the new vector and the one or zero unchanged. Note that this is the step where the recursion takes place. After the discrete Fourier transform of the vectors with the even and the odd elements are computed, we call them y\_even respectively y\_odd. The vector y\_even is multiplied with $\omega = \exp(-2 \pi i / N) * v $, where $v$ a is the vector $\begin{bmatrix} 0 \\ 1 \\ \dots \\ N \end{bmatrix} $ and $N$ is the length of both the vectors y\_even and y\_odd. A vector with two elements is created: $y = \begin{bmatrix} y_{odd} + \omega y_{even} \\ y_{odd} - \omega y_{even} \end{bmatrix}$. This vector is the function output and will be the Fourier transform of the given vector.
-The inverse discrete Fourier transform is calculated the same way, only using the complex conjugate of the vector.%CHECK DIT
+The inverse discrete Fourier transform is calculated the same way, only using $\omega = \exp{(2\pi i / N)} * \begin{bmatrix} 0 \\ 1 \\ \dots \\N \end{bmatrix}$, so without the minus sign in the exponent. %CHECK DIT
 
 %short discussion of the reliability and precision of the answer. restrictions program. When does program not work?
 %
@@ -138,6 +138,7 @@ The figure of the discrete Fourier transform was produced by evaluating the time
 For large n, the function is not very fast. For the example above, where the function was evaluated at $128$ points, it took about 40 seconds to make the plot. We take a look at the formula for the discrete Fourier transform $F_m = \sum_{k=1}^{N}f_k\omega^{(k-1)(m-1)}$. Since $\omega$ is unknown these are all linear equations so computing the Fourier transform is just matrix multiplication. This implies the number of operations needed is $O(N^2)$, which is way to much to use it for larger datasets. To reduce the number of computations $F_f(m)$ is splitted in a function on the even elements and a function on the odd elements of the input vector: $F_f(m) = F_{f_{odd}}(m) + \omega_{N/2}^{m-1}F_{f_{feven}}(m).$ This allows to interpret $F_{f_{odd/even}}$ as twice repeated vectors. Using this equation the number of operations will reduce to $O(N \log_2 N)$
 
 %convolution
-
+The convolution of two functions $f$ and $g$ evaluated at $2^n$ number of points can be computed by taking the inverse Fourier transform of the product of the Fourier transform of both functions. This method is used in Oosterhuis\_assignment3\_exercise3\_3. This function can take two function handles and will evaluate these functions at eight number of points or the function can take vectors which consist of the evaluation of a function in $2^n$ number of points.
+%nog iets over derivatives using fourier, of gewoon weg laten?
 %derivates (first and second)
 \end{document}

@@ -8,7 +8,7 @@ function [ y ] = Oosterhuis_assignment3_exercise3_2(normal_or_inverse,vector_x)
 normal_or_inverse;
 if normal_or_inverse == 0
 N = length(vector_x);
-%omega = exp((-2*pi*1i)/N)
+
 %recursion:
 if N==1
     %b = -1i*(2 * pi * k * (n-1))/N
@@ -26,7 +26,7 @@ else
     end
 end
 %
-%LET's try the inverse fourier transform:
+%The inverse fourier transform:
 if normal_or_inverse == 1
     N = length(vector_x);
     if N==1
@@ -34,15 +34,12 @@ if normal_or_inverse == 1
     else
         vector_x_even = vector_x(2:2:N);
         vector_x_odd = vector_x(1:2:N);
-        y_even = Oosterhuis_exercise3_2(normal_or_inverse,vector_x_even);
-        y_odd = Oosterhuis_exercise3_2(normal_or_inverse,vector_x_odd);
+        y_even = Oosterhuis_assignment3_exercise3_2(normal_or_inverse,vector_x_even);
+        y_odd = Oosterhuis_assignment3_exercise3_2(normal_or_inverse,vector_x_odd);
         N = length(y_odd);
-        omega = exp(2 * pi * 1i / (N*2)) .^ (0:N-1)' ;
-        %z = d .* y_bottom;
-        %y = [ y_top + z , y_top - z ];
+        omega = exp(2 * pi * 1i / (N*2)) .^ (0:N-1)' ; %no '-' sign since it's the inverse Fourier transform
         z = omega .* y_even;
         y = [ y_odd + z; y_odd - z];
-        %omega = exp((-2*pi*1i)/N)
     end
 end
 end

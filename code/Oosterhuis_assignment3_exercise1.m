@@ -76,8 +76,5 @@ xlabel('x');
 ylabel('y');
 title('Data points and approximation of data')
 hold off
-%output
-vector_lambda_new
-vector_c
-residue_vector_lambda_new
+
 end
