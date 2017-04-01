@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{listings}
+\usepackage{blindtext}
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -38,15 +39,40 @@
 %
 \section*{Exercise \rom{1}}
 %how should the function be called + example
-The function Oosterhuis\_assignment3\_exercise1 uses the least squares of residuals method to give a function that is an approximation of the data. The input is 
-%concise description of the method
+The function Oosterhuis\_assignment3\_exercise1 uses the least squares of residuals method to give a function that is an approximation of the data. The input is a bivariate dataset and a vector of initial gusses for $\lambda_1,..,\lambda_m.$ An example are the arguments 'data3' and the vector $\begin{bmatrix} \lambda_1 && \lambda_2 && \lambda_3 && \lambda_4 \end{bmatrix} =  \begin{bmatrix} 0.1 && 0.2 && 0.3 && -0.2 \end{bmatrix}$, where data3 is a bivariate dataset. The output the function gives with this input is %%%NOG EVEN RUNNEN
 
 %short discussion of the reliability and precision of the answer. restrictions program. When does program not work?
+The reliability and precision of the computed lambdas, values voor $C$ and the residue depends on the user input. When the initial guesses for lambdas are 'bad', the function can return a approximation for the data that fits the data quite bad. This is for example the case when for the dataset data3 the initial guesses for the lambdas don't contain a negative value. The plot of such an result is shown in figure \ref{ex1_badplot}. We see the residue is ..., which is also much higher than in the example above when a negative intial guess was used for one of the lambdas.
 
 %illustration of output and how figure was produced. describe picture
-
+Figure \ref{ex1_graphs} shows the solution of the least square approximation along with the data points for four different data sets. This output was produced by first plotting the data and then plotting the independent variables against the solution of $A * C$, where the matrix A and the vector C both depent on the new values for the lambdas.
+%PLAATJES
+\begin{figure}[H]
+\parbox[t]{0.4\textwidth}{
+	\includegraphics[width=\linewidth,natwidth=610,natheight=642]{ex1_testdata.jpg}
+	\caption{Data and least square approximatiotn for 20 data points.}
+    %\label{normaal}
+}
+\hfill
+\parbox[t]{0.4\textwidth}{
+	\includegraphics[width=\linewidth,natwidth=610,natheight=642]{ex1_data1.jpg}
+	\caption {Data and least square approximatiotn for dataset 'data1'.}
+}
+%
+\parbox[t]{0.4\textwidth}{
+	\includegraphics[width=\linewidth,natwidth=610,natheight=642]{ex1_data2.jpg}
+	\caption{Data and least square approximatiotn for dataset 'data2'.}
+    %\label{cauchy}
+}
+\hfill
+\parbox[t]{0.4\textwidth }{
+	\includegraphics[width =\linewidth,natwidth=610,natheight=642]{ex1_data3.jpg}
+	\caption{Data and least square approximatiotn for dataset 'data3'.}
+    %\label{logitnormaal}
+ }
+ \end{figure}
 %answers to questions asked in the assignment
-
+%No real questions,only something about values of exp which are 'hidden in signals' and how many???
 \section*{Exercise \rom{2}}
 
 %how should the function be called + example
@@ -78,7 +104,7 @@ The figure of the discrete Fourier transform was produced by evaluating the time
 %figures
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{ex3_func_wiki_1_func.jpg}
+\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{ex3_func_wiki_1_func.jpg}
 %[width=0.6\linewidth]
 \caption{$g(t)= \sum_{n=1}^{k} n \cos(n\omega t), \omega = 20 \pi$}
 \label{fig3_1}
@@ -87,7 +113,7 @@ The figure of the discrete Fourier transform was produced by evaluating the time
 %figures
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{ex3_func_wiki_1_four.jpg}
+\includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{ex3_func_wiki_1_four.jpg}
 %[width=0.6\linewidth]
 \caption{Discrete Fourier transform of $g(t)$ in frequency domain.}
 \label{fig3_1}

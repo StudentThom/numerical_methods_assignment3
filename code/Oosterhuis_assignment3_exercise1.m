@@ -26,9 +26,9 @@ function [vector_lambda_new,vector_c,residue_vector_lambda_new] = Oosterhuis_ass
 %Examples for input:
 %testinput: Oosterhuis_exercise1_1(data_test,[-2,-1.5,-2])
 %example input:
-%Oosterhuis_exercise1_1(data3,[0.1,0.2,0.3,-0.2]) %note the negative lambda
-%Oosterhuis_exercise1_1(data2,[0.1,0.2,0.3])
-%Oosterhuis_exercise1_1(data1,[0.1,0.2])
+%Oosterhuis_assignemnt3_exercise1(data3,[0.1,0.2,0.3,-0.2]) %note the negative lambda
+%Oosterhuis_assignment3_exercise1(data2,[0.1,0.2,0.3])
+%Oosterhuis_assignment3_exercise1(data1,[0.1,0.2])
 %
 
 %read data and make vector of independent and dependent variables
