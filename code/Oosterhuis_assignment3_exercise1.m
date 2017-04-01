@@ -24,9 +24,9 @@ function [vector_lambda_new,vector_c,residue_vector_lambda_new] = Oosterhuis_ass
 %depend on new lambdas.
 
 %Examples for input:
-%testinput: Oosterhuis_exercise1_1(data_test,[-2,-1.5,-2])
+%testinput: Oosterhuis_assignment1_exercise1(data_test,[-2,-1.5,-2])
 %example input:
-%Oosterhuis_assignemnt3_exercise1(data3,[0.1,0.2,0.3,-0.2]) %note the negative lambda
+%Oosterhuis_assignment3_exercise1(data3,[0.1,0.2,0.3,-0.2]) %note the negative lambda
 %Oosterhuis_assignment3_exercise1(data2,[0.1,0.2,0.3])
 %Oosterhuis_assignment3_exercise1(data1,[0.1,0.2])
 %
@@ -76,5 +76,8 @@ xlabel('x');
 ylabel('y');
 title('Data points and approximation of data')
 hold off
-
+%output
+vector_lambda_new
+vector_c
+residue_vector_lambda_new
 end
