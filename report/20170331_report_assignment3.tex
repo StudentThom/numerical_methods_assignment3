@@ -49,7 +49,7 @@ The functions gives an approximation for the solution of the equation $A * C = y
 The solution for lambda and C is construted such that $ \sum_{i=1}^{n} (C_1 \exp{(\lambda_1 x_i)} + \dots + C_m \exp{(\lambda_m x_i)} - y_i)^2$ is minimal.
 
 %short discussion of the reliability and precision of the answer. restrictions program. When does program not work?
-The reliability and precision of the computed lambdas, values voor $C$ and the residue depends on the user input. When the initial guesses for lambdas are 'bad', the function can return a approximation for the data that fits the data quite bad. This is for example the case when for the dataset data3 the initial guesses for the lambdas don't contain a negative value. The plot of such an result is shown in figure \ref{ex1_badplot}. We see the sum of the squared residues is $76.10$, which is also much higher than in the example above when a negative intial guess was used for one of the lambdas.
+The reliability and precision of the computed lambdas, values voor $C$ and the residue depends on the user input. When the initial guesses for lambdas are 'bad', the function can return a approximation for the data that fits the data quite bad. This is for example the case when for the dataset data3 the initial guesses for the lambdas don't contain a negative value. The plot of such an result is shown in the figure below. We see the sum of the squared residues is $76.10$, which is also much higher than in the example above when a negative intial guess was used for one of the lambdas.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{ex1_badplot.jpg}
@@ -100,7 +100,9 @@ The function Oosterhuis\_assignment3\_exercise2 takes an $n$ number of points. F
 \end{figure}
 
 %concise description of the method
-To determine the length of C, the cumulative sum of the square root of the elementswise differences of x squared plus the elementwise differences of y squared are taken. Using interpolation between every points $(x_i,y_i)$ and  $(x_{i+1},y_{i+1})$ a line is constucted. The points with the interpolated lines are plotted. The coordinates of the center of mass of the figure are equal to $\bigl((\int_{\Omega}x) / (\int_{\Omega}1); ((\int_{\Omega}x) / (\int_{\Omega}1)\bigr)$.
+To determine the length of C, the cumulative sum of the square root of the elementswise differences of x squared plus the elementwise differences of y squared are taken. Using interpolation between every points $(x_i,y_i)$ and  $(x_{i+1},y_{i+1})$ a line is constucted. The points along with the interpolated lines are plotted. The coordinates of the center of mass of the figure are equal to $\bigl((\int_{\Omega}x) / (\int_{\Omega}1); ((\int_{\Omega}x) / (\int_{\Omega}1)\bigr)$.
+The area of the enclosed domain can be calculated via Greens theorem: $\oint_{\delta\Omega}[f_1dx+f_2dy] = \int_{\omega}[\frac{\delta f_2}{\delta x} - \frac{\delta f_1}{\delta y}]dxdy.$ Since the area doesn't depend on $f_1,f_2$, they can be chosen and are chosen in such an way the intergal is easy to calculate: $f_1=0, f_2=x$. When these are filled in this gives $\int_{\Omega} [\frac{\delta f_2}{\delta x} - \frac{\delta f_1}{\delta y}]dxdy = \int_{\Omega} 1 dxdy.$ 
+
 %short discussion of the reliability and precision of the answer. restrictions program. When does program not work?
 
 %illustration of output and how figure was produced. describe picture
@@ -138,7 +140,7 @@ The figure of the discrete Fourier transform was produced by evaluating the time
 \includegraphics[width=0.6\linewidth,natwidth=610,natheight=642]{ex3_func_wiki_1_four.jpg}
 %[width=0.6\linewidth]
 \caption{Discrete Fourier transform of $g(t)$ in frequency domain.}
-\label{fig3_1}
+\label{fig3_2}
 \end{figure}
 
 %answers to questions asked in the assignment

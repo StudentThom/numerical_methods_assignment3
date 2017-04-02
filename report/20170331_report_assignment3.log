@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.12.6)  1 APR 2017 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.6)  2 APR 2017 22:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -32,7 +32,7 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
@@ -376,10 +376,18 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
@@ -398,26 +406,26 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen118
 \caption@hangindent=\dimen119
 )
-\c@ContinuedFloat=\count90
+\c@ContinuedFloat=\count91
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count91
+\lst@mode=\count92
 \lst@gtempboxa=\box26
 \lst@token=\toks18
-\lst@length=\count92
+\lst@length=\count93
 \lst@currlwidth=\dimen120
-\lst@column=\count93
-\lst@pos=\count94
+\lst@column=\count94
+\lst@pos=\count95
 \lst@lostspace=\dimen121
 \lst@width=\dimen122
-\lst@newlines=\count95
-\lst@lineno=\count96
+\lst@newlines=\count96
+\lst@lineno=\count97
 \lst@maxwidth=\dimen123
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count97
-\lst@skipnumbers=\count98
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
 \lst@framebox=\box27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -431,28 +439,28 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count99
-\c@Blindtext=\count100
-\c@blind@countparstart=\count101
-\blind@countxx=\count102
-\blindtext@numBlindtext=\count103
-\blind@countyy=\count104
-\c@blindlist=\count105
-\c@blindlistlevel=\count106
-\c@blindlist@level=\count107
-\blind@listitem=\count108
-\c@blind@listcount=\count109
-\c@blind@levelcount=\count110
-\blind@mathformula=\count111
-\blind@Mathformula=\count112
-\c@blind@randomcount=\count113
-\c@blind@randommax=\count114
-\c@blind@pangramcount=\count115
-\c@blind@pangrammax=\count116
+\c@blindtext=\count100
+\c@Blindtext=\count101
+\c@blind@countparstart=\count102
+\blind@countxx=\count103
+\blindtext@numBlindtext=\count104
+\blind@countyy=\count105
+\c@blindlist=\count106
+\c@blindlistlevel=\count107
+\c@blindlist@level=\count108
+\blind@listitem=\count109
+\c@blind@listcount=\count110
+\c@blind@levelcount=\count111
+\blind@mathformula=\count112
+\blind@Mathformula=\count113
+\c@blind@randomcount=\count114
+\c@blind@randommax=\count115
+\c@blind@pangramcount=\count116
+\c@blind@pangrammax=\count117
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count117
+\c@float@type=\count118
 \float@exts=\toks19
 \float@box=\box28
 \@float@everytoks=\toks20
@@ -478,13 +486,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count118
+\inf@bad=\count119
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count119
-\leftroot@=\count120
+\uproot@=\count120
+\leftroot@=\count121
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count121
-\DOTSCASE@=\count122
+\classnum@=\count122
+\DOTSCASE@=\count123
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
@@ -493,15 +501,15 @@ LaTeX Info: Redefining \cdots on input line 518.
 \big@size=\dimen126
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count123
-\c@MaxMatrixCols=\count124
+\macc@depth=\count124
+\c@MaxMatrixCols=\count125
 \dotsspace@=\muskip10
-\c@parentequation=\count125
-\dspbrk@lvl=\count126
+\c@parentequation=\count126
+\dspbrk@lvl=\count127
 \tag@help=\toks22
-\row@=\count127
-\column@=\count128
-\maxfields@=\count129
+\row@=\count128
+\column@=\count129
+\maxfields@=\count130
 \andhelp@=\toks23
 \eqnshift@=\dimen127
 \alignsep@=\dimen128
@@ -538,11 +546,7 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip48
 \dth@everypar=\toks31
 )
-(./20170331_report_assignment3.aux
-
-LaTeX Warning: Label `fig3_1' multiply defined.
-
-)
+(./20170331_report_assignment3.aux)
 \openout1 = `20170331_report_assignment3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -559,9 +563,9 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: dvips
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: dvips
+* driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -592,12 +596,70 @@ LaTeX Font Info:    ... okay on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count131
+\scratchdimen=\dimen133
+\scratchbox=\box32
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen134
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks33
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count130
+\c@lstlisting=\count137
 LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -612,50 +674,87 @@ Overfull \hbox (14.19281pt too wide) in paragraph at lines 48--50
 MS/cmsy/m/n/12 ^^@
  []
 
+<ex1_badplot.jpg, id=1, 562.1pt x 421.575pt>
+File: ex1_badplot.jpg Graphic file (type jpg)
+ <use ex1_badplot.jpg>
+Package pdftex.def Info: ex1_badplot.jpg used on input line 55.
+(pdftex.def)             Requested size: 281.85587pt x 211.39165pt.
+ [1
 
-Package caption Warning: \label without proper reference on input line 58.
-See the caption package documentation for explanation.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<ex1_testdata.jpg, id=15, 570.13pt x 411.5375pt>
+File: ex1_testdata.jpg Graphic file (type jpg)
+ <use ex1_testdata.jpg>
+Package pdftex.def Info: ex1_testdata.jpg used on input line 69.
+(pdftex.def)             Requested size: 187.89914pt x 135.63196pt.
 
+<ex1_data1.jpg, id=16, 570.13pt x 411.5375pt>
+File: ex1_data1.jpg Graphic file (type jpg)
+ <use ex1_data1.jpg>
+Package pdftex.def Info: ex1_data1.jpg used on input line 74.
+(pdftex.def)             Requested size: 187.89914pt x 135.63196pt.
 
-LaTeX Warning: Reference `ex1_badplot' on page 1 undefined on input line 52.
+<ex1_data2.jpg, id=17, 570.13pt x 411.5375pt>
+File: ex1_data2.jpg Graphic file (type jpg)
+ <use ex1_data2.jpg>
+Package pdftex.def Info: ex1_data2.jpg used on input line 80.
+(pdftex.def)             Requested size: 187.89914pt x 135.63196pt.
 
-File: ex1_badplot.jpg Graphic file (type eps)
-<ex1_badplot.jpg> [1
+<ex1_data3.jpg, id=18, 570.13pt x 411.5375pt>
+File: ex1_data3.jpg Graphic file (type jpg)
+ <use ex1_data3.jpg>
+Package pdftex.def Info: ex1_data3.jpg used on input line 86.
+(pdftex.def)             Requested size: 187.89914pt x 135.63196pt.
 
-]
-File: ex1_testdata.jpg Graphic file (type eps)
- <ex1_testdata.jpg>
-File: ex1_data1.jpg Graphic file (type eps)
- <ex1_data1.jpg>
-File: ex1_data2.jpg Graphic file (type eps)
- <ex1_data2.jpg>
-File: ex1_data3.jpg Graphic file (type eps)
+<ex2_hand.jpg, id=19, 562.1pt x 421.575pt>
+File: ex2_hand.jpg Graphic file (type jpg)
+ <use ex2_hand.jpg>
+Package pdftex.def Info: ex2_hand.jpg used on input line 96.
+(pdftex.def)             Requested size: 281.85587pt x 211.39165pt.
+ [2 <./ex1_badplot.jpg> <./ex1_testdata.jpg> <./ex1_data1.jpg> <./ex1_data2.jpg
+> <./ex1_data3.jpg>] [3 <./ex2_hand.jpg>] <ex3_func_wiki_1_func.jpg, id=27, 562
+.1pt x 421.575pt>
+File: ex3_func_wiki_1_func.jpg Graphic file (type jpg)
 
-<ex1_data3.jpg> [2]
-File: ex2_hand.jpg Graphic file (type eps)
- <ex2_hand.jpg> [3] [4]
+<use ex3_func_wiki_1_func.jpg>
+Package pdftex.def Info: ex3_func_wiki_1_func.jpg used on input line 131.
+(pdftex.def)             Requested size: 281.85587pt x 211.39165pt.
 
-LaTeX Warning: Reference `fig3_2' on page 5 undefined on input line 124.
+<ex3_func_wiki_1_four.jpg, id=28, 562.1pt x 421.575pt>
+File: ex3_func_wiki_1_four.jpg Graphic file (type jpg)
 
-File: ex3_func_wiki_1_func.jpg Graphic file (type eps)
-<ex3_func_wiki_1_func.jpg>
-File: ex3_func_wiki_1_four.jpg Graphic file (type eps)
- <ex3_func_wiki_1_four.jpg> [5] [6] [7]
-(./20170331_report_assignment3.aux)
+<use ex3_func_wiki_1_four.jpg>
+Package pdftex.def Info: ex3_func_wiki_1_four.jpg used on input line 140.
+(pdftex.def)             Requested size: 281.85587pt x 211.39165pt.
+ [4] [5 <./ex3_func_wiki_1_func.jpg> <./ex3_func_wiki_1_four.jpg>] [6] (./20170
+331_report_assignment3.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4952 strings out of 494954
- 69398 string characters out of 6181003
- 135078 words of memory out of 5000000
- 8187 multiletter control sequences out of 15000+600000
- 12096 words of font info for 47 fonts, out of 8000000 for 9000
+ 5890 strings out of 494953
+ 84197 string characters out of 6180977
+ 154030 words of memory out of 5000000
+ 9084 multiletter control sequences out of 15000+600000
+ 11789 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,8n,46p,1191b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,46p,1191b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb>
+Output written on 20170331_report_assignment3.pdf (6 pages, 323092 bytes).
+PDF statistics:
+ 75 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on 20170331_report_assignment3.dvi (7 pages, 15608 bytes).
